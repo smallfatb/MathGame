@@ -13,6 +13,9 @@
 		92970AFC25B0F28F0030B5B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92970AFA25B0F28F0030B5B8 /* Main.storyboard */; };
 		92970AFE25B0F2970030B5B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92970AFD25B0F2970030B5B8 /* Assets.xcassets */; };
 		92970B0125B0F2970030B5B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92970AFF25B0F2970030B5B8 /* LaunchScreen.storyboard */; };
+		92970B0C25B1003B0030B5B8 /* MathQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92970B0B25B1003B0030B5B8 /* MathQuestion.swift */; };
+		92970B0F25B1004F0030B5B8 /* AdditionQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92970B0E25B1004F0030B5B8 /* AdditionQuestion.swift */; };
+		92970B1225B112D40030B5B8 /* MultiplicationQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92970B1125B112D40030B5B8 /* MultiplicationQuestion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		92970AFD25B0F2970030B5B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92970B0025B0F2970030B5B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92970B0225B0F2970030B5B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92970B0B25B1003B0030B5B8 /* MathQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathQuestion.swift; sourceTree = "<group>"; };
+		92970B0E25B1004F0030B5B8 /* AdditionQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionQuestion.swift; sourceTree = "<group>"; };
+		92970B1125B112D40030B5B8 /* MultiplicationQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationQuestion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				92970AFD25B0F2970030B5B8 /* Assets.xcassets */,
 				92970AFF25B0F2970030B5B8 /* LaunchScreen.storyboard */,
 				92970B0225B0F2970030B5B8 /* Info.plist */,
+				92970B0B25B1003B0030B5B8 /* MathQuestion.swift */,
+				92970B0E25B1004F0030B5B8 /* AdditionQuestion.swift */,
+				92970B1125B112D40030B5B8 /* MultiplicationQuestion.swift */,
 			);
 			path = MathGame;
 			sourceTree = "<group>";
@@ -138,8 +147,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				92970AF925B0F28E0030B5B8 /* ViewController.swift in Sources */,
+				92970B0F25B1004F0030B5B8 /* AdditionQuestion.swift in Sources */,
 				92970AF525B0F28E0030B5B8 /* AppDelegate.swift in Sources */,
+				92970B1225B112D40030B5B8 /* MultiplicationQuestion.swift in Sources */,
 				92970AF725B0F28E0030B5B8 /* SceneDelegate.swift in Sources */,
+				92970B0C25B1003B0030B5B8 /* MathQuestion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
