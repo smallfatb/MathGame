@@ -154,8 +154,18 @@
                                     <action selector="multiplicationGameBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8LW-2T-3Fe"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUB-wu-zSP">
+                                <rect key="frame" x="75" y="729" width="261" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="New ToThePowerOf Game"/>
+                                <connections>
+                                    <action selector="multiplicationGameBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zRn-ZY-nsL"/>
+                                    <action selector="toThePowerOfGameBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jrV-9i-dOa"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAe-mn-oBI">
-                                <rect key="frame" x="135" y="760" width="144" height="40"/>
+                                <rect key="frame" x="135" y="801" width="144" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Check Answer"/>

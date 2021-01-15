@@ -17,12 +17,11 @@ class ViewController: UIViewController {
     
     var answerText = ""
     var question: MathQuestion?
-    var additionQuestion = AdditionQuestion()
-    var multiplicationQuestion = MultiplicationQuestion()
     
     var gameStarted = false
     var additionGameStarted = false
     var multiplicationGameStarted = false
+    var toThePowerOfGameStarted = false;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +30,10 @@ class ViewController: UIViewController {
     
     @IBAction func additionGameBtn(_ sender: Any) {
         gameStarted = true
-        additionGameStarted = true
-        multiplicationGameStarted = false
         
-        self.additionQuestion = AdditionQuestion()
+        self.question = AdditionQuestion()
         
-        self.questionLabel.text = self.additionQuestion.text
+        self.questionLabel.text = self.question!.text
     }
     
     @IBAction func checkAnswer(_ sender: Any) {
@@ -47,32 +44,30 @@ class ViewController: UIViewController {
                 return
             }
             
-            if additionGameStarted {
-                if  self.additionQuestion.checkAnswer(Int(self.answerText)!) {
+            if  self.question!.check(answer: Int(self.answerText)!) {
                     self.feedbackLabel.text = "You Answered Correct"
                 } else {
                     self.feedbackLabel.text = "You Answered Incorrect"
                 }
-            }
             
-            if multiplicationGameStarted {
-                if  self.multiplicationQuestion.checkAnswer(Int(self.answerText)!) {
-                    self.feedbackLabel.text = "You Answered Correct"
-                } else {
-                    self.feedbackLabel.text = "You Answered Incorrect"
-                }
-            }
         }
     }
     
     @IBAction func multiplicationGameBtn(_ sender: Any) {
         gameStarted = true
-        additionGameStarted = false
-        multiplicationGameStarted = true
         
-        self.multiplicationQuestion = MultiplicationQuestion()
+        self.question = MultiplicationQuestion()
         
-        self.questionLabel.text = self.multiplicationQuestion.text
+        self.questionLabel.text = self.question!.text
+    }
+    
+    
+    @IBAction func toThePowerOfGameBtn(_ sender: Any) {
+        gameStarted = true
+        
+        self.question = ToThePowerOfQuestion()
+        
+        self.questionLabel.text = self.question!.text
     }
     
     @IBAction func deleteBtn(_ sender: Any) {
